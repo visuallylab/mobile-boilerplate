@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@projectName/src/*": ["src/*"],
+      "@projectName/components/*": ["src/components/*"],
+      "@projectName/utils/*": ["src/utils/*"],
+      "@projectName/screens/*": ["src/screens/*"],
+      "@projectName/navigators/*": ["src/navigators/*"],
+      "@projectName/services/*": ["src/services/*"],
+      "@projectName/sagas/*": ["src/sagas/*"],
+      "@projectName/hocs/*": ["src/hocs/*"],
+      "@projectName/reducers": ["src/reducers"],
+      "@projectName/constants": ["src/constants"],
+      "@projectName/actions": ["src/actions"],
+      "@projectName/store": ["src/store"]
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "jsx": "react-native",
+    "lib": ["es7"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"]
+}

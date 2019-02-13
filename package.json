@@ -1,0 +1,73 @@
+{
+  "name": "projectName",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build:ios": "react-native run-ios --no-packager --simulator 'iPhone 7'",
+    "test": "jest",
+    "tsc": "tsc",
+    "lint": "tslint --project tsconfig.json 'src/**/*ts?(x)'"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "16.6.0-alpha.8af6728",
+    "react-native": "0.57.3",
+    "react-native-config": "^0.11.5",
+    "react-native-gesture-handler": "^1.0.12",
+    "react-native-linear-gradient": "^2.5.3",
+    "react-native-onesignal": "^3.2.7",
+    "react-native-rsa-native": "^1.0.24",
+    "react-native-touch-id": "^4.1.1",
+    "react-native-vector-icons": "^6.0.2",
+    "react-navigation": "^3.0.9",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
+    "redux-saga": "^0.16.2"
+  },
+  "devDependencies": {
+    "@types/jest": "latest",
+    "@types/node": "^10.12.5",
+    "@types/react": "latest",
+    "@types/react-native": "latest",
+    "@types/react-native-touch-id": "^4.0.1",
+    "@types/react-native-vector-icons": "^4.6.4",
+    "@types/react-navigation": "^3.0.1",
+    "@types/react-redux": "^6.0.9",
+    "@types/react-test-renderer": "latest",
+    "@types/redux-logger": "^3.0.6",
+    "@types/redux-saga": "^0.10.5",
+    "@visuallylab/tslint-config-frontend": "^1.0.9",
+    "babel-jest": "23.6.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "husky": "^1.3.1",
+    "jest": "23.6.0",
+    "lint-staged": "^8.1.0",
+    "metro-react-native-babel-preset": "0.48.1",
+    "react-test-renderer": "16.6.0-alpha.8af6728",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "typescript": "latest"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "jsxSingleQuote": false,
+    "trailingComma": "all"
+  }
+}
